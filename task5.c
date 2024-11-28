@@ -37,7 +37,7 @@ int main(){
 
     printf("The total revenue = UGX %d\n",total_revenue);
     */
-
+    /*
     //Profit & loss calculation 
     int cost_price = 200;
     int selling_price = 250;
@@ -45,6 +45,14 @@ int main(){
     
     //Percentage Symbol: Added %% in the printf statement to display a % sign.
     printf("profit and loss percentage = %.2f%%\n" , profit_loss_percentage);
+    */
 
+    //Discounted amount calculation
+    int original_amount =1200;
+    float discount_rate = 0.2;
+
+    int final_amount = original_amount - ((float)discount_rate * original_amount);
+
+    printf("the final amount = UGX%d\n" ,final_amount);
 return 0;
 }
