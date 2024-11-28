@@ -2,7 +2,7 @@
 #include <math.h>
 
 int main(){
-
+/*
     //1 calculate the total sale price
     int originalPrice = 20000;
     float discountPercentage = 0.1;
@@ -40,7 +40,7 @@ int main(){
     int t = 3;
     int simpleInterest = (p*r*t)/100;
     printf("The simple interest on the loan is UGX%d\n\n", simpleInterest);
-
+*/
     //7 calculate the break-even point
     int fixedCost = 10000000;
     int variableCost = 50000;
