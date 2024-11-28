@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int main(){
     /*
@@ -55,7 +56,7 @@ int main(){
 
     printf("the final amount = UGX%d\n" ,final_amount);
     */
-
+    /*
     //Simple interest calculation
     int principal = 10000;
     float rate = 0.05;
@@ -64,6 +65,20 @@ int main(){
     float simple_interest = (principal * rate * time)/ 100;
 
     printf("simple interest = %.0f%%\n", simple_interest);
+    */
+    
+    //Compound interest calculation
+    int principal = 8000;      // Principal amount
+    float rate = 0.04;         // Annual interest rate (in decimal)
+    int time = 2;              // Time in years
+    int n = 4;                 // Compounding quarterly
+
+    // Correct usage of pow() for exponentiation
+    float amount = principal * pow((1 + rate / n), n * time); 
+    float compound_interest = amount - principal;
+
+    // Use %.2f for formatted floating-point numbers
+    printf("Compound Interest = Ugx %.2f\n", compound_interest);
 
 return 0;
 }
