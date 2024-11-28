@@ -80,14 +80,22 @@ int main(){
     // Use %.2f for formatted floating-point numbers
     printf("Compound Interest = Ugx %.2f\n", compound_interest);
     */
-    
+    /*
     //VAT calculation
     int base_price = 150;
     float VAT_rate = 0.18;
     int final_price = base_price + (VAT_rate*base_price);
 
     printf("The final price after VAT = UGX %d\n",final_price);
+    */
 
+    //Discount & VAT calculation
+    int original_price = 200;
+    float discount_rate = 0.10;
+    float VAT_rate = 0.18;
+    int discounted_price = original_price - ((float)discount_rate*original_price);
+    int final_price = discounted_price + ((float)VAT_rate*discounted_price);
+    printf("The final price of product = UGX %d\n",final_price);
 
 return 0;
 }
