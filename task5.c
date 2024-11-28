@@ -46,7 +46,7 @@ int main(){
     //Percentage Symbol: Added %% in the printf statement to display a % sign.
     printf("profit and loss percentage = %.2f%%\n" , profit_loss_percentage);
     */
-
+    /*
     //Discounted amount calculation
     int original_amount =1200;
     float discount_rate = 0.2;
@@ -54,5 +54,16 @@ int main(){
     int final_amount = original_amount - ((float)discount_rate * original_amount);
 
     printf("the final amount = UGX%d\n" ,final_amount);
+    */
+
+    //Simple interest calculation
+    int principal = 10000;
+    float rate = 0.05;
+    int time = 3;
+
+    float simple_interest = (principal * rate * time)/ 100;
+
+    printf("simple interest = %.0f%%\n", simple_interest);
+
 return 0;
 }
