@@ -97,5 +97,41 @@ int main(){
     int final_price = discounted_price + ((float)VAT_rate*discounted_price);
     printf("The final price of product = UGX %d\n",final_price);
 
+    //11 break-even point calculation
+    int fixedCost = 2000;
+    int variableCost = 15;
+    int sellingPrice = 25;
+    int breakEvenPoint = fixedCost/(sellingPrice-variableCost);
+    printf("The break even point is UGX %d\n\n", breakEvenPoint);
+
+    //12 Average sales calculation
+    int days = 30;
+    int totalSales = 60000;
+    float averageSales = totalSales/days;
+    printf("The average sales are UGX%0.1f\n\n", averageSales);
+
+    //13 commission calculations
+    int saleVolume = 50000;
+    float commissionRate = 0.05;
+    int commission = saleVolume * commissionRate;
+    printf("The commission is UGX%d\n\n", commission);
+
+    //14 straight line depreciation
+    int assetCost = 5000;
+    int residualValue = 500;
+    int usefulLife = 5;
+    int depreciation = (assetCost-residualValue)/usefulLife;
+    printf("The depreciation is UGX%d\n\n", depreciation);
+
+    //15 annual salary calculation
+    int hourlyWage = 30;
+    int hoursPerWeek = 40;
+    int weeksPerYear = 52;
+    int annualSalary = hourlyWage*hoursPerWeek*weeksPerYear;
+    printf("The annual salary is UGX%d\n\n", annualSalary);
+
+
+
+
 return 0;
 }
