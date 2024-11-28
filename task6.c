@@ -41,7 +41,33 @@ int main(){
     int simpleInterest = (p*r*t)/100;
     printf("The simple interest on the loan is UGX%d\n\n", simpleInterest);
 
+    //7 calculate the break-even point
+    int fixedCost = 10000000;
+    int variableCost = 50000;
+    int pricePerUnit = 100000;
+    int breakEvenPoint = fixedCost/(pricePerUnit-variableCost);
+    printf("The break-even point is UGX%d\n\n", breakEvenPoint);
 
+    //8 calculate the flat interest
+    int investmentAmount = 1000000;
+    float rate = 0.04;
+    int time = 2;
+    int flatInterest = (investmentAmount*time*rate);
+    printf("The flat interest is UGX%d\n\n", flatInterest);
+
+    //9 Calculate the profit margin
+    int salesRevenue = 30000000;
+    int profit = 9000000;
+    int profitMargin = (profit/salesRevenue)*100;
+    printf("The profit margin is UGX%d\n\n", profitMargin);
+
+    //10 calculate the depreciation using straight line method
+    int cost = 10000000;
+    int usefulLife = 5;
+    int residualValue = 2000000;
+    int annualDepreciation = (cost - residualValue)/usefulLife;
+    printf("The annual depreciation is UGX%d\n\n", annualDepreciation);
+    
 
 
     return 0;
