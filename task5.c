@@ -130,6 +130,40 @@ int main(){
     int annualSalary = hourlyWage*hoursPerWeek*weeksPerYear;
     printf("The annual salary is UGX%d\n\n", annualSalary);
 
+    //16 total revenue from multiple customers
+    int customer1 = 200;
+    int customer2 = 500;
+    int customer3 = 300;
+    int totalRevenue = customer1+customer2+customer3;
+    printf("The total revenue from multiple customers is UGX%d\n\n", totalRevenue);
+
+    //17 loan installment calculation
+    int loanPrincipal = 20000;
+    float annualRate = 0.06;
+    int term = 5;
+    int installment = (loanPrincipal*(1+pow((annualRate/2),(12*term))))/12;
+    printf("The installment is UGX%d\n\n", installment);
+
+    //18 gross profit calculation
+    int totalRevenue = 12000;
+    int totalCost = 8000;
+    int grossProfit = totalRevenue*totalCost;
+    print("The gross profit is UGX%d\n\n", grossProfit);
+
+    //19 restaurant bill calculation
+    int basePrice = 50;
+    float tipRate = 0.15;
+    float taxRate = 0.08;
+    int totalCost = basePrice +(tipRate*basePrice)+(taxRate*basePrice);
+    printf("The total cost of a meal is UGX%d\n\n", totalCost );
+
+    //20 markup price calculation
+    int costPrice = 100;
+    float profitMargin = 0.25;
+    int sellingPrice = costPrice + (profitMargin*costPrice);
+    printf("The selling price of a product is UGX%d\n\n", sellingPrice);
+
+
 
 
 
