@@ -66,7 +66,7 @@ int main(){
 
     printf("simple interest = %.0f%%\n", simple_interest);
     */
-    
+    /*
     //Compound interest calculation
     int principal = 8000;      // Principal amount
     float rate = 0.04;         // Annual interest rate (in decimal)
@@ -79,6 +79,15 @@ int main(){
 
     // Use %.2f for formatted floating-point numbers
     printf("Compound Interest = Ugx %.2f\n", compound_interest);
+    */
+    
+    //VAT calculation
+    int base_price = 150;
+    float VAT_rate = 0.18;
+    int final_price = base_price + (VAT_rate*base_price);
+
+    printf("The final price after VAT = UGX %d\n",final_price);
+
 
 return 0;
 }
