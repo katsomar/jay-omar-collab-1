@@ -88,7 +88,7 @@ int main(){
 
     printf("The final price after VAT = UGX %d\n",final_price);
     */
-
+/*
     //Discount & VAT calculation
     int original_price = 200;
     float discount_rate = 0.10;
@@ -148,8 +148,8 @@ int main(){
     int totalRevenue = 12000;
     int totalCost = 8000;
     int grossProfit = totalRevenue*totalCost;
-    print("The gross profit is UGX%d\n\n", grossProfit);
-
+    printf("The gross profit is UGX%d\n\n", grossProfit);
+*/
     //19 restaurant bill calculation
     int basePrice = 50;
     float tipRate = 0.15;
