@@ -41,7 +41,8 @@ int main(){
     int simpleInterest = (p*r*t)/100;
     printf("The simple interest on the loan is UGX%d\n\n", simpleInterest);
 */
-    //7 calculate the break-even point
+     /*
+     //7 calculate the break-even point
     int fixedCost = 10000000;
     int variableCost = 50000;
     int pricePerUnit = 100000;
@@ -67,8 +68,27 @@ int main(){
     int residualValue = 2000000;
     int annualDepreciation = (cost - residualValue)/usefulLife;
     printf("The annual depreciation is UGX%d\n\n", annualDepreciation);
-    
+    */
+     
+    //11. Discounted price
+    int price;
+    float discount_rate;
+    int discounted_price, final_price;
 
+    // Prompt for price
+    printf("Please enter a price below:\n");
+    scanf("%d", &price);
 
+    // Prompt for discount rate
+    printf("Please enter a discount rate (e.g., 20 for 20%%):\n");
+    scanf("%f", &discount_rate);
+
+    // Calculate the discounted price and final price
+    discounted_price = (int)(discount_rate / 100 * price); // Casting to int
+    final_price = price - discounted_price;
+
+    // Output the result
+    printf("The discount will be %d\n",discounted_price);
+    printf("The discounted price is = UGX %d\n", final_price);
     return 0;
 }
