@@ -88,7 +88,7 @@ int main(){
 
     printf("The final price after VAT = UGX %d\n",final_price);
     */
-
+/*
     //Discount & VAT calculation
     int original_price = 200;
     float discount_rate = 0.10;
@@ -96,6 +96,76 @@ int main(){
     int discounted_price = original_price - ((float)discount_rate*original_price);
     int final_price = discounted_price + ((float)VAT_rate*discounted_price);
     printf("The final price of product = UGX %d\n",final_price);
+
+    //11 break-even point calculation
+    int fixedCost = 2000;
+    int variableCost = 15;
+    int sellingPrice = 25;
+    int breakEvenPoint = fixedCost/(sellingPrice-variableCost);
+    printf("The break even point is UGX %d\n\n", breakEvenPoint);
+
+    //12 Average sales calculation
+    int days = 30;
+    int totalSales = 60000;
+    float averageSales = totalSales/days;
+    printf("The average sales are UGX%0.1f\n\n", averageSales);
+
+    //13 commission calculations
+    int saleVolume = 50000;
+    float commissionRate = 0.05;
+    int commission = saleVolume * commissionRate;
+    printf("The commission is UGX%d\n\n", commission);
+
+    //14 straight line depreciation
+    int assetCost = 5000;
+    int residualValue = 500;
+    int usefulLife = 5;
+    int depreciation = (assetCost-residualValue)/usefulLife;
+    printf("The depreciation is UGX%d\n\n", depreciation);
+
+    //15 annual salary calculation
+    int hourlyWage = 30;
+    int hoursPerWeek = 40;
+    int weeksPerYear = 52;
+    int annualSalary = hourlyWage*hoursPerWeek*weeksPerYear;
+    printf("The annual salary is UGX%d\n\n", annualSalary);
+
+    //16 total revenue from multiple customers
+    int customer1 = 200;
+    int customer2 = 500;
+    int customer3 = 300;
+    int totalRevenue = customer1+customer2+customer3;
+    printf("The total revenue from multiple customers is UGX%d\n\n", totalRevenue);
+
+    //17 loan installment calculation
+    int loanPrincipal = 20000;
+    float annualRate = 0.06;
+    int term = 5;
+    int installment = (loanPrincipal*(1+pow((annualRate/2),(12*term))))/12;
+    printf("The installment is UGX%d\n\n", installment);
+
+    //18 gross profit calculation
+    int totalRevenue = 12000;
+    int totalCost = 8000;
+    int grossProfit = totalRevenue*totalCost;
+    printf("The gross profit is UGX%d\n\n", grossProfit);
+*/
+    //19 restaurant bill calculation
+    int basePrice = 50;
+    float tipRate = 0.15;
+    float taxRate = 0.08;
+    int totalCost = basePrice +(tipRate*basePrice)+(taxRate*basePrice);
+    printf("The total cost of a meal is UGX%d\n\n", totalCost );
+
+    //20 markup price calculation
+    int costPrice = 100;
+    float profitMargin = 0.25;
+    int sellingPrice = costPrice + (profitMargin*costPrice);
+    printf("The selling price of a product is UGX%d\n\n", sellingPrice);
+
+
+
+
 
 return 0;
 }
