@@ -69,12 +69,12 @@ int main(){
     int annualDepreciation = (cost - residualValue)/usefulLife;
     printf("The annual depreciation is UGX%d\n\n", annualDepreciation);
     */
-     
+     /*
     //11. Discounted price
     int price;
     float discount_rate;
     int discounted_price, final_price;
-    /*
+    
     // Prompt for price
     printf("Please enter a price below:\n");
     scanf("%d", &price);
@@ -92,5 +92,24 @@ int main(){
     printf("The discounted price is = UGX %d\n", final_price);
     */
     
+    //12.Print Tax Amount 
+    int price;
+    float tax_rate;
+    int tax_amount;
+
+    //prompt user for price
+    printf("Please enter a  price :\n");
+    scanf("%d",&price);
+
+    //prompt user for a tax rate
+    printf("PLease enter a tax value :\n");
+    scanf("%f",&tax_rate);
+
+    tax_amount = (int)(price * (tax_rate/100));
+
+    //Calculating the tax amount
+    printf("The tax amount = UGX %d\n",tax_amount);
+    
+
     return 0;
 }
