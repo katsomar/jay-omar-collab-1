@@ -74,7 +74,7 @@ int main(){
     int price;
     float discount_rate;
     int discounted_price, final_price;
-
+    /*
     // Prompt for price
     printf("Please enter a price below:\n");
     scanf("%d", &price);
@@ -90,5 +90,7 @@ int main(){
     // Output the result
     printf("The discount will be %d\n",discounted_price);
     printf("The discounted price is = UGX %d\n", final_price);
+    */
+    
     return 0;
 }
