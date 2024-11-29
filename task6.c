@@ -91,7 +91,7 @@ int main(){
     printf("The discount will be %d\n",discounted_price);
     printf("The discounted price is = UGX %d\n", final_price);
     */
-    
+    /*
     //12.Print Tax Amount 
     int price;
     float tax_rate;
@@ -109,7 +109,7 @@ int main(){
 
     //Calculating the tax amount
     printf("The tax amount = UGX %d\n",tax_amount);
-    
+    */
 
     return 0;
 }
