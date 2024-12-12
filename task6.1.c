@@ -4,6 +4,7 @@ void tax_amount(int price , float tax_rate);
 void total_salary(int base_salary , float bonus_rate);
 void profit_loss(int selling_price, int cost_price);
 void discounted_price2(int original_price, float discount_rate);
+void double_investment(int investment_amount, float annual_rate);
 int main(){
         //11
         discounted_price(25000,0.2);
@@ -15,6 +16,8 @@ int main(){
         profit_loss(20000,15000);
         //15
         discounted_price2(25000, 50);
+        //16
+        double_investment(1000000, 10);
 return 0;    
 }
 
@@ -53,4 +56,13 @@ void discounted_price2(int original_price, float discount_rate) {
     } else {
         printf("There is no discount. The price remains UGX %d\n", original_price);
     }
+}
+//16.Number of Years to Double an investment
+void double_investment(int investment_amount, float annual_rate){
+    int years = 0;
+    int initial_investment = investment_amount;
+    for(years = 0;investment_amount < 2 * initial_investment; years++){
+         investment_amount += investment_amount * (annual_rate / 100); 
+    }
+ printf("It will take %d years to double the investment.\n",years);
 }
