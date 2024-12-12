@@ -3,6 +3,7 @@ void discounted_price(int price, float discount_rate);
 void tax_amount(int price , float tax_rate);
 void total_salary(int base_salary , float bonus_rate);
 void profit_loss(int selling_price, int cost_price);
+void discounted_price2(int original_price, float discount_rate);
 int main(){
         //11
         discounted_price(25000,0.2);
@@ -12,6 +13,8 @@ int main(){
         total_salary(500000,0.5); 
         //14
         profit_loss(20000,15000);
+        //15
+        discounted_price2(25000, 50);
 return 0;    
 }
 
@@ -40,5 +43,14 @@ void profit_loss(int selling_price, int cost_price) {
         printf("The loss is UGX %d\n", -profit_loss); // Display absolute value for loss
     } else {
         printf("No profit, no loss.\n");
+    }
+}
+//15.Discounted Price if Discount is Above 20%
+void discounted_price2(int original_price, float discount_rate) {
+    if (discount_rate > 20) {
+        float discounted_price = original_price - (discount_rate / 100 * original_price);
+        printf("The discounted price is %.1f\n", discounted_price);
+    } else {
+        printf("There is no discount. The price remains UGX %d\n", original_price);
     }
 }
